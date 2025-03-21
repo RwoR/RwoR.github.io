@@ -28,40 +28,45 @@
             display: none !important;
         }
 
-        /* 调整卡片内部边距，确保没有额外空间 */
-        .card-1 {
-            padding-bottom: 0 !important;
-            margin-bottom: 0 !important;
-        }
-
-        /* 确保视频容器紧贴卡片底部 */
-        .card-image {
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
-        }
-
-
-        /* 确保视频本身没有下边距 */
-        .card-image video {
-            display: block !important;
-            margin-bottom: 0 !important;
-        }
-
         /* 确保卡片本身有圆角 */
         .card {
-            border-radius: 10px !important;
+            border-radius: 15px !important;
             overflow: hidden !important;
         }
 
-        /* 添加卡片行之间的间距 */
+        /* 调整卡片样式 */
         .card-0 {
+            width: 100% !important;
+            margin-left: 10px !important;
+            margin-right: auto !important;
             margin-bottom: 30px !important;
-            /* 可以根据需要调整大小 */
         }
 
-        /* 最后一个卡片行不需要底部间距 */
-        .card-0:last-child {
-            margin-bottom: 0px !important;
+        .card-1 {
+            width: 95% !important;
+            max-width: none !important;
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        /* 增强滑块内容的显示效果 */
+        .custom-slider .card-image img,
+        .custom-slider .card-image video {
+            width: 100% !important;
+            border-radius: 8px !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* 调整滑块容器 */
+        .container.is-clipped {
+            padding: 0 10 px !important;
+        }
+
+        /* 确保移动设备上的良好显示效果 */
+        @media screen and (max-width: 768px) {
+            .card-0 {
+                width: 90% !important;
+            }
         }
     </style>
 </head>
@@ -95,27 +100,28 @@
                 <div class="column has-text-centered ">
                     <div class="publication-authors shadowtext authors-font"
                         style="color: #FFFFFF;font-weight: bold;font-family:DMSerifText;">
+
                         <span class="author-block sansfont">Liang Heng<sup>1*</sup>&nbsp;&nbsp;&nbsp;</span>
                         <span class="author-block sansfont">Xiaoqi Li<sup>1*</sup>&nbsp;&nbsp;&nbsp;</span>
                         <span class="author-block sansfont">Shangqing Mao<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
+                        <span class="author-block sansfont">Jiaming Liu<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
                         <span class="author-block sansfont">Ruolin Liu<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
                         <span class="author-block sansfont">Jingli Wei<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
-                        <span class="author-block sansfont">Yu-Kai Wang<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
                         <br>
+                        <span class="author-block sansfont">Yu-Kai Wang<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
                         <span class="author-block sansfont">Yueru Jia<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
                         <span class="author-block sansfont">Chenyang Gu<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
-                        <span class="author-block sansfont">Jiaming Liu<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
-                        <span class="author-block sansfont">Chenfeng Xu<sup>2</sup>&nbsp;&nbsp;&nbsp;</span>
+                        <span class="author-block sansfont">Rui Zhao<sup>2</sup>&nbsp;&nbsp;&nbsp;</span>
                         <span class="author-block sansfont">Shanghang Zhang<sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
                         <span class="author-block sansfont">Hao Dong<sup>1</sup></span>
                     </div>
 
                     <div class="publication-authors shadowtext authors-font"
                         style="color: #FFFFFF;font-weight: bold;font-family:DMSerifText; margin-bottom: 4pt;">
-                        <span class="author-block sansfont"><sup>1</sup>Center on Frontiers of Computing Studies, Peking
+                        <span class="author-block sansfont"><sup>1</sup>School of Computer Science, Peking
                             University&nbsp;&nbsp;</span>
-                        <span class="author-block sansfont"><sup>2</sup>University of California,
-                            Berkeley&nbsp;&nbsp;</span>
+                        <span class="author-block sansfont"><sup>2</sup>Tencent Robotics X Laboratory
+                            &nbsp;&nbsp;</span>
                         <span class="author-block sansfont"><sup>*</sup>Equal Contribution </span>
                     </div>
 
@@ -132,26 +138,6 @@
                             </span>
 
                             <span class="link-block">
-                                <a href="https://www.youtube.com/watch?v=QERmPmCg9aQ"
-                                    class="external-link button is-normal is-rounded light-btn btn-font">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </span>
-                                    <span class="sansfont">YouTube</span>
-                                </a>
-                            </span>
-
-                            <span class="link-block">
-                                <a href="https://www.bilibili.com/video/BV1j94y1H7Hm/?buvid=YA40DAA4C1939E574402B8753701AF310CFF&is_story_h5=false&mid=kOiE12ow6Llv%2F70nN%2FnaBw%3D%3D&plat_id=147&share_from=ugc&share_medium=iphone&share_plat=ios&share_session_id=2576C9EE-EC33-458F-AAA1-108F9E8A8822&share_source=COPY&share_tag=s_i&timestamp=1700297509&unique_k=HvSnPHL&up_id=245771980&vd_source=a5d5f36fa93049aa21aa60fe9824d708"
-                                    class="external-link button is-normal is-rounded light-btn btn-font">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-bilibili"></i>
-                                    </span>
-                                    <span class="sansfont">Bilibili</span>
-                                </a>
-                            </span>
-
-                            <span class="link-block">
                                 <a href="static/assets/bib.txt"
                                     class="external-link button is-normal is-rounded light-btn btn-font">
                                     <span class="icon">
@@ -161,16 +147,16 @@
                                 </a>
                             </span>
 
+
                             <span class="link-block">
-                                <a href="demo.html"
+                                <a href="https://arxiv.org/abs/2311.10982"
                                     class="external-link button is-normal is-rounded light-btn btn-font">
                                     <span class="icon">
-                                        <i class="fa-solid fa-desktop"></i>
+                                        <i class="fab fa-github"></i>
                                     </span>
-                                    <span class="sansfont">Demo</span>
+                                    <span class="sansfont">Code</span>
                                 </a>
                             </span>
-
                         </div>
 
                     </div>
@@ -182,28 +168,6 @@
         </div>
     </section>
 
-    <section class="hero">
-        <div class="columns" style="background: linear-gradient(#9D9D9D, #FfFfFf);">
-            <div class="column auto"></div>
-            <div class="column is-half">
-                <div class="hero-body-long-video"
-                    style="display: flex; flex-direction: column; justify-content: space-around;">
-                    <div class="column-video"
-                        style="border-radius:10px;justify-content: center;align-items: center; font-size: 100px;">
-                        <iframe src="https://www.youtube.com/embed/QERmPmCg9aQ" src="" class="frame" frameborder="0"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="long-font" style="font-family:'Acme';color:#595959;">
-                        The First 3-minute AI Generated Video
-                    </div>
-                    <div class="note-font" style="margin-top: 8pt; font-style: italic;">
-                        *Best viewed in the highest resolution and with the sound on
-                    </div>
-                </div>
-            </div>
-            <div class="column auto"></div>
-        </div>
-    </section>
 
     <div style="border: #ffffff 20px solid;"></div>
 
@@ -224,32 +188,49 @@
     <!-- 替换原来的 <div style="border: #999999 1px solid;"></div> -->
     <hr style="border: 0; height: 1px; background-color: #999999; margin: 20px 0;">
 
-    <!-- 然后添加图片展示区域 -->
     <section class="hero">
         <div class="columns" style="background: #FFFFFF;">
             <div class="column auto"></div>
-            <div class="column is-half">
+            <div class="column is-four-fifths"> <!-- 将is-half改为is-three-fifths，控制整体区域大小 -->
                 <div class="hero-body-long-video"
                     style="display: flex; flex-direction: column; justify-content: space-around;">
                     <div class="column-image"
                         style="border-radius:10px; justify-content: center; align-items: center; overflow: hidden;">
-                        <img src="static/assets/pipe.png" alt="RwoR Pipeline Overview"
-                            style="width: 100%; border-radius: 10px;">
-                    </div>
-                    <!-- 添加的说明文字 -->
-                    <div class="note-font" style="margin-top: 8pt; ">
-                        The top part illustrates the RwoR pipeline, which extracts actions from human hand
-                        demonstrations and trains a diffusion
-                        model to convert these demonstrations into UMI gripper demonstrations for policy learning. The
-                        bottom part visualizes
-                        the collected human hand demonstrations and the corresponding agent execution during real robot
-                        deployment.
+                        <div style="position: relative;">
+                            <img id="pipelineImg" src="static/assets/pipe.png" alt="RwoR Pipeline Overview"
+                                style="width: 90%; border-radius: 10px; transform-origin: center center; display: block; margin: 0 auto;">
+                            <div
+                                style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(255,255,255,0.7); border-radius: 5px; padding: 5px;">
+                                <button onclick="zoomImage(1.1)" class="button is-small">
+                                    <span class="icon is-small"><i class="fas fa-search-plus"></i></span>
+                                </button>
+                                <button onclick="zoomImage(0.9)" class="button is-small">
+                                    <span class="icon is-small"><i class="fas fa-search-minus"></i></span>
+                                </button>
+                                <button onclick="resetZoom()" class="button is-small">
+                                    <span class="icon is-small"><i class="fas fa-redo"></i></span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="column auto"></div>
         </div>
     </section>
+
+    <!-- 添加JavaScript到页面底部的script标签中 -->
+    <script>
+        let zoomLevel = 1;
+        function zoomImage(factor) {
+            zoomLevel *= factor;
+            document.getElementById('pipelineImg').style.transform = `scale(${zoomLevel})`;
+        }
+        function resetZoom() {
+            zoomLevel = 1;
+            document.getElementById('pipelineImg').style.transform = 'scale(1)';
+        }
+    </script>
 
     <div style="border: #ffffff 20px solid;"></div>
 
@@ -258,7 +239,7 @@
             <div class="columns is-centered has-text-centered">
                 <div class="container is-max-maxwidth">
                     <div class="title sansfont mode-font" style="font-family:'Acme';color:#595959;">
-                        Upstream Generated Demo
+                        Demonstrations
                     </div>
                     <div class="note-font" style="margin-top: -10pt; font-style: italic;">
                         *Human hand videos and corresponding generated UMI gripper execution videos.
@@ -270,143 +251,139 @@
     </section>
 
     <div style="border: #999999 1px solid;"></div>
+    <section class="hero">
+        <div class="hero-body-subtitle" style="display: block">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title sansfont mode-font"
+                        style="font-family:'Acme';color:#595959; font-size: 48px !important;">
+                        Generated Demos
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section class="hero is-light">
         <section class="section">
-            <div class="container is-clipped">
+            <div class="container is-clipped"
+                style="max-width: 200%; width: 95%; margin-left: auto; margin-right: auto;">
                 <div id="slide1r" class="custom-slider">
+
                     <div class='card-0'>
                         <!-- 新添加的带文字的卡片 -->
-                        <div class="card card-1" style="margin-bottom: 15px; padding: 15px; background-color: #f5f5f5;">
+                        <div class="card card-1"
+                            style="margin-bottom: 15px; padding: 15px; background-color: #f5f5f5;width: 90%;  margin-right: auto;">
                             <div class="content" style="text-align: center;">
-                                <h4 class="title is-4" style="color: #595959; font-family: 'Acme';">Prompt</h4>
-                                <p style="color: #666666;">Pick and place.</p>
+                                <h4 class="title is-4" style="color: #595959; font-family: 'Acme';">White sponge</h4>
                             </div>
-                            <div style="height: 15px;"></div>
-                        </div>
-                        <div style="height: 15px;"></div>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/26_0/a-watermark.mp4' type='video/mp4'>
-                                </video></div>
+                            <div style="height: 1px;"></div>
                         </div>
                         <div style="height: 15px;"></div>
                         <div class='card card-1'>
                             <div class='card-image'>
-                                <video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/40_0/a-watermark.mp4' type='video/mp4'>
+                                <img src='videos/gif/white_sponge.gif' style="width: 100%; display: block;"
+                                    alt="White sponge demonstration">
                                 </video>
                             </div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>The cyber metal tiger is roaring and walking, blue light, cyberpunk
-                                    street, dark, light</div>
-                            </div> -->
-                        </div>
-                    </div>
-
-                    <div class='card-0'>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/2_0/2_0-b-watermark.mp4' type='video/mp4'>
-                                </video></div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>An angry Godzilla is roaring and raising hands, big fire is burning
-                                    and bombs are exploding in the background</div>
-                            </div> -->
                         </div>
                         <div style="height: 15px;"></div>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/127/a-3-watermark.mp4' type='video/mp4'>
-                                </video></div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>Rotate, rotate around the golden rabbit model</div>
-                            </div> -->
-                        </div>
                     </div>
                     <div class='card-0'>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/103_0/a-watermark.mp4' type='video/mp4'>
-                                </video></div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>Coloful powder exploding</div>
-                            </div> -->
+                        <!-- 新添加的带文字的卡片 -->
+                        <div class="card card-1"
+                            style="margin-bottom: 15px; padding: 15px; background-color: #f5f5f5;width: 90%;  margin-right: auto;">
+                            <div class="content" style="text-align: center;">
+                                <h4 class="title is-4" style="color: #595959; font-family: 'Acme';">Banana</h4>
+                            </div>
+                            <div style="height: 1px;"></div>
                         </div>
                         <div style="height: 15px;"></div>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/107_0/a-4-watermark.mp4' type='video/mp4'>
-                                </video></div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>Girl rotate head slowly, smiling, hair fluttering, leaves floating,
-                                    slowly</div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class='card-0'>
                         <div class='card card-1'>
                             <div class='card-image'>
-                                <video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/30_0_case1/a-3-watermark.mp4' type='video/mp4'>
+                                <img src='videos/gif/banana.gif' style="width: 100%; display: block;"
+                                    alt="White sponge demonstration">
                                 </video>
                             </div>
+                        </div>
+                        <div style="height: 15px;"></div>
+                    </div>
+                    <div class='card-0'>
+                        <!-- 新添加的带文字的卡片 -->
+                        <div class="card card-1"
+                            style="margin-bottom: 15px; padding: 15px; background-color: #f5f5f5;width: 90%;  margin-right: auto;">
+                            <div class="content" style="text-align: center;">
+                                <h4 class="title is-4" style="color: #595959; font-family: 'Acme';">Yellow macaron</h4>
+                            </div>
+                            <div style="height: 1px;"></div>
+                        </div>
+                        <div style="height: 15px;"></div>
+                        <div class='card card-1'>
+                            <div class='card-image'>
+                                <img src='videos/gif/Yellow macaron.gif' style="width: 100%; display: block;"
+                                    alt="White sponge demonstration">
+                                </video>
+                            </div>
+                        </div>
+                        <div style="height: 15px;"></div>
+                    </div>
+                    <div class='card-0'>
+                        <!-- 新添加的带文字的卡片 -->
+                        <div class="card card-1"
+                            style="margin-bottom: 15px; padding: 15px; background-color: #f5f5f5;width: 90%; margin-right: auto;">
+                            <div class="content" style="text-align: center;">
+                                <h4 class="title is-4" style="color: #595959; font-family: 'Acme';">Green bowl</h4>
+                            </div>
+                            <div style="height: 1px;"></div>
+                        </div>
+                        <div style="height: 15px;"></div>
+                        <div class='card card-1'>
+                            <div class='card-image'>
+                                <img src='videos/gif/Green bowl.gif' style="width: 100%; display: block;"
+                                    alt="White sponge demonstration">
+                                </video>
+                            </div>
+                        </div>
+                        <div style="height: 15px;"></div>
+                    </div>
+                    <div class='card-0'>
+                        <!-- 新添加的带文字的卡片 -->
+                        <div class="card card-1"
+                            style="margin-bottom: 15px; padding: 15px; background-color: #f5f5f5;width: 90%; margin-right: auto;">
+                            <div class="content" style="text-align: center;">
+                                <h4 class="title is-4" style="color: #595959; font-family: 'Acme';">White charger</h4>
+                            </div>
+                            <div style="height: 1px;"></div>
+                        </div>
+                        <div style="height: 15px;"></div>
+                        <div class='card card-1'>
+                            <div class='card-image'>
+                                <img src='videos/gif/White charger.gif' style="width: 100%; display: block;"
+                                    alt="White sponge demonstration">
+                                </video>
+                            </div>
+                        </div>
+                        <div style="height: 15px;"></div>
+                    </div>
+                    <div class='card-0'>
+                        <div class="card card-1"
+                            style="margin-bottom: 15px; padding: 15px; background-color: #f5f5f5;width: 90%;  margin-right: auto;">
+                            <div class="content" style="text-align: center;">
+                                <h4 class="title is-4" style="color: #595959; font-family: 'Acme';">Gray cup</h4>
+                            </div>
+                            <div style="height: 1px;"></div>
+                        </div>
+                        <div style="height: 15px;"></div>
+                        <div class='card card-1'>
+                            <div class='card-image'>
+                                <img src='videos/gif/Gray cup.gif' style="width: 100%; display: block;"
+                                    alt="White sponge demonstration">
+                                </video>
+                            </div>
+                        </div>
+                        <div style="height: 15px;"></div>
 
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>The comic girl walking along the road, hair is futtering, petal
-                                    floating and falling down</div>
-                            </div> -->
-                        </div>
-                        <div style="height: 15px;"></div>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/16_0/a-watermark.mp4' type='video/mp4'>
-                                </video></div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>Blue flowers grow out from the skull slowly</div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class='card-0'>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/134/a-2-watermark.mp4' type='video/mp4'>
-                                </video></div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>Boy walking in the street, butterflies flying</div>
-                            </div> -->
-                        </div>
-                        <div style="height: 15px;"></div>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/49_0/a-1-watermark.mp4' type='video/mp4'>
-                                </video></div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>The girl is smiling and winking, hair fluttering</div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class='card-0'>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/5_0/a-2-watermark.mp4' type='video/mp4'>
-                                </video></div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>A cute cat pirat is sufing on the sea, it raises its hands and
-                                    dances on the board, the waves are surging</div>
-                            </div> -->
-                        </div>
-                        <div style="height: 15px;"></div>
-                        <div class='card card-1'>
-                            <div class='card-image'><video class='lazy' autoplay loop muted width='100%'>
-                                    <source data-src='videos/7_0/a-watermark.mp4' type='video/mp4'>
-                                </video></div>
-                            <!-- <div class='card-content'>
-                                <div class='prompt'>A happy panda is playing guitar and singing loudly, music symbols
-                                    are slowly generated from the guitar and floating in the sky</div>
-                            </div> -->
-                        </div>
                     </div>
                 </div>
             </div>
@@ -416,45 +393,8 @@
 
     <div style="border: #ffffff 20px solid;"></div>
 
-    <!-- <section class="hero" style="padding-top: 2em;">
-        <div class="v-columns" style="display: flex; width: 100%;">
-            <div class="v-column-left"></div>
 
-            <div class="v-column-center" style="text-align: center; display: flex;">
 
-                <div class=""
-                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-                    <img src="videos/57_30/c.png" alt="Image" style="border-radius: 6pt;">
-                    <p class="handtext instruct-font">Image Instructions</p>
-                </div>
-                <div class=""
-                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
-                    <div class="box handtext ist-font"
-                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                    <div class="box handtext example-font"
-                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
-                        The ball is in fire and turns into a dragon in fire
-                    </div>
-                    <div class="box handtext ist-font"
-                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
-                        <i class="fa-solid fa-video"></i>
-                    </div>
-                </div>
-                <div class=""
-                    style="width: 22%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
-                    <video class="lazy" width="100%" autoplay loop muted style="border-radius: 6pt;">
-                        <source data-src="videos/57_30/b-watermark.mp4" type="video/mp4">
-                    </video>
-                </div>
-
-            </div>
-
-            <div class="v-column-right"></div>
-        </div>
-    </section>
- -->
 
 
     <!-- <section class="section">
@@ -619,73 +559,423 @@
         <div class="hero-body-subtitle-light" style="display: block">
             <div class="columns is-centered has-text-centered">
                 <div class="container is-max-maxwidth">
-                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
-                        Downstream Real-World Demo
-                    </div>
-                    <div class="note-font" style="margin-top: -10pt; font-style: italic;">
-                        *Human hand operation videos paired with real-world demonstrations.
+                    <div class="title is-2 sansfont"
+                        style="font-family:'Acme';color:#595959; font-size: 48px !important;">
+                        Real-world Execution Demos
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
+    <section class="hero" style="padding-top: 1em; padding-bottom: 2em;">
+        <div class="container">
+            <div class="box"
+                style="background-color: #f9f9f9; border-radius: 6px; max-width: 90%; margin: 0 auto; box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.05);">
+                <div class="content">
+                    <p style="color: #595959; font-size: 1.3em; line-height: 1.6; text-align: justify;">
+                        During real robot deployment, our method is evaluated across 9 tasks on the Franka Research 3
+                        (FR3)
+                        robot with a 3D-printed UMI gripper. We use a Gopro 9 camera to obtain real-world visual
+                        observations from the wrist view. For each task, 50 training human hand demonstrations are
+                        collected
+                        in a specific working space range. We train an agent for each task and evaluate each task in 15
+                        trials within the training working space. The hand demonstrations and Franka execution demos are
+                        shown above.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div style="border: #999999 1px solid;"></div>
+
+    <section class="hero" style="padding-top: -7em; margin-bottom: -7em;">
+        <div class="v-columns" style="display: flex; width: 100%;">
+            <div class="v-column-left"></div>
+            <div class="v-column-center" style="text-align: center; display: flex;">
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/hand/open_drawer.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+                <div class=""
+                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="box handtext example-font"
+                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
+                        Open Drawer
+                    </div>
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                </div>
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/execu/open_drawer.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="v-column-right"></div>
+        </div>
+    </section>
+
+
+    <section class="hero" style="padding-top: 0em; margin-bottom: -7em;">
+        <div class="v-columns" style="display: flex; width: 100%;">
+            <div class="v-column-left"></div>
+
+            <div class="v-column-center" style="text-align: center; display: flex;">
+
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/hand/unplug_charger.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+                <div class=""
+                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="box handtext example-font"
+                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
+                        Unplug Charger
+                    </div>
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                </div>
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/execu/unplug_charger.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="v-column-right"></div>
+        </div>
+    </section>
+
+
+    <section class="hero" style="padding-top: 0em; margin-bottom: -7em;">
+        <div class="v-columns" style="display: flex; width: 100%;">
+            <div class="v-column-left"></div>
+
+            <div class="v-column-center" style="text-align: center; display: flex;">
+
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/hand/close_microwave.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+                <div class=""
+                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="box handtext example-font"
+                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
+                        Close Microwave
+                    </div>
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                </div>
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/execu/close_microwave.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="v-column-right"></div>
+        </div>
+    </section>
+
+
+
+    <section class="hero" style="padding-top: 0em; margin-bottom: -7em;">
+        <div class="v-columns" style="display: flex; width: 100%;">
+            <div class="v-column-left"></div>
+
+            <div class="v-column-center" style="text-align: center; display: flex;">
+
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/hand/lift_bottle.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+                <div class=""
+                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="box handtext example-font"
+                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
+                        Lift Bottle
+                    </div>
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                </div>
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/execu/lift_bottle.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="v-column-right"></div>
+        </div>
+    </section>
+
+
+
+    <section class="hero" style="padding-top: 0em; margin-bottom: -7em;">
+        <div class="v-columns" style="display: flex; width: 100%;">
+            <div class="v-column-left"></div>
+
+            <div class="v-column-center" style="text-align: center; display: flex;">
+
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/hand/pour_water.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+                <div class=""
+                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="box handtext example-font"
+                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
+                        Pour Water
+                    </div>
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                </div>
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/execu/pour_water.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="v-column-right"></div>
+        </div>
+    </section>
+
+
+
+    <section class="hero" style="padding-top: 0em; margin-bottom: -7em;">
+        <div class="v-columns" style="display: flex; width: 100%;">
+            <div class="v-column-left"></div>
+
+            <div class="v-column-center" style="text-align: center; display: flex;">
+
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/hand/slide_block.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+                <div class=""
+                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="box handtext example-font"
+                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
+                        Slide Block
+                    </div>
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                </div>
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/execu/slide_block.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="v-column-right"></div>
+        </div>
+    </section>
+
+
+    <section class="hero" style="padding-top: 0em; margin-bottom: -7em;">
+        <div class="v-columns" style="display: flex; width: 100%;">
+            <div class="v-column-left"></div>
+
+            <div class="v-column-center" style="text-align: center; display: flex;">
+
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/hand/stack_bowl.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+                <div class=""
+                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="box handtext example-font"
+                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
+                        Stack Bowl
+                    </div>
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                </div>
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/execu/stack_bowl.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="v-column-right"></div>
+        </div>
+    </section>
+
+    <section class="hero" style="padding-top: 0em; margin-bottom: -7em;">
+        <div class="v-columns" style="display: flex; width: 100%;">
+            <div class="v-column-left"></div>
+
+            <div class="v-column-center" style="text-align: center; display: flex;">
+
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/hand/table_rearrange.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+                <div class=""
+                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="box handtext example-font"
+                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
+                        Table Rearrange
+                    </div>
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                </div>
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/execu/table_rearrange.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="v-column-right"></div>
+        </div>
+    </section>
+
+
+    <section class="hero" style="padding-top: 0em; margin-bottom: -7em;">
+        <div class="v-columns" style="display: flex; width: 100%;">
+            <div class="v-column-left"></div>
+
+            <div class="v-column-center" style="text-align: center; display: flex;">
+
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/hand/wipe_plate.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+                <div class=""
+                    style="width: 45%; display: flex; justify-content: space-around; align-items: center; text-align: center;">
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="box handtext example-font"
+                        style="font-size: 1.25em; text-align: center; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02);">
+                        Wipe Plate
+                    </div>
+                    <div class="box handtext ist-font"
+                        style="text-align: center; background-color: #ffffff00; box-shadow: 0 0 0;">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                </div>
+                <div class=""
+                    style="width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 6pt;">
+                        <source src="videos/execu/wipe_plate.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="v-column-right"></div>
+        </div>
+    </section>
 
     <div style="border: #ffffff 20px solid;"></div>
-
-    <section class="hero">
-        <div class="hero-body-subtitle-light" style="display: block">
-            <div class="columns is-centered has-text-centered">
-                <div class="container is-max-maxwidth">
-                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
-                        Genralization Demo
-                    </div>
-                    <div class="note-font" style="margin-top: -10pt; font-style: italic;">
-                        *Human hand operation videos paired with real-world demonstrations.
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <div style="border: #999999 1px solid;"></div>
-
-    <div style="border: #ffffff 20px solid;"></div>
-
-    <section class="hero">
-        <div class="hero-body-subtitle-light" style="display: block; padding-top: 1rem; padding-bottom: 1rem;">
-            <div class="columns is-centered has-text-centered">
-                <div class="container is-max-maxwidth">
-                    <div class="title is-3 sansfont"
-                        style="font-family:'Acme'; color:#595959; font-size: 42px; margin-bottom: 5px;">
-                        Action Generalization
-                    </div>
-                    <div class="note-font" style="font-style: italic; margin-bottom: 1rem;">
-                        Demonstrate generalization to unseen actions.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="hero">
-        <div class="hero-body-subtitle-light" style="display: block; padding-top: 1rem; padding-bottom: 1rem;">
-            <div class="columns is-centered has-text-centered">
-                <div class="container is-max-maxwidth">
-                    <div class="title is-3 sansfont"
-                        style="font-family:'Acme'; color:#595959; font-size: 42px; margin-bottom: 5px;">
-                        Instance Generalization
-                    </div>
-                    <div class="note-font" style="font-style: italic; margin-bottom: 1rem;">
-                        Demonstrate generalization to unseen object instances.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="hero">
         <div class="hero-body-subtitle-light" style="display: block">
@@ -694,78 +984,290 @@
                     <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
                         Experiments
                     </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div style="border: #999999 1px solid;"></div>
+
+    <section class="hero">
+        <div class="hero-body-subtitle-light" style="display: block">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-2 sansfont"
+                        style="font-family:'Acme';color:#595959; font-size: 48px !important;">
+                        Comparisons with Baseline
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="hero">
+        <div class="columns" style="background: #FFFFFF;">
+            <div class="column auto"></div>
+            <div class="column is-four-fifths"> <!-- 将is-half改为is-three-fifths，控制整体区域大小 -->
+                <div class="hero-body-long-video"
+                    style="display: flex; flex-direction: column; justify-content: space-around;">
+                    <div class="column-image"
+                        style="border-radius:10px; justify-content: center; align-items: center; overflow: hidden;">
+                        <div style="position: relative;">
+                            <img id="pipelineImg" src="videos/gif/chart.png" alt="RwoR Pipeline Overview"
+                                style="width: 90%; border-radius: 10px; transform-origin: center center; display: block; margin: 0 auto;">
+                            <div
+                                style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(255,255,255,0.7); border-radius: 5px; padding: 5px;">
+                                <button onclick="zoomImage(1.1)" class="button is-small">
+                                    <span class="icon is-small"><i class="fas fa-search-plus"></i></span>
+                                </button>
+                                <button onclick="zoomImage(0.9)" class="button is-small">
+                                    <span class="icon is-small"><i class="fas fa-search-minus"></i></span>
+                                </button>
+                                <button onclick="resetZoom()" class="button is-small">
+                                    <span class="icon is-small"><i class="fas fa-redo"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column auto"></div>
+        </div>
+    </section>
+
+
+
+    <section class="hero" style="padding-top: 1em; padding-bottom: 2em;">
+        <div class="container">
+            <div class="box"
+                style="background-color: #f9f9f9; border-radius: 6px; max-width: 90%; margin: 0 auto; box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.05);">
+                <div class="content">
+                    <div class="content">
+                        <p
+                            style="color: #595959; font-size: 1.3em; line-height: 1.6; text-align: justify; margin-bottom: 1em;text-indent: 2em;">
+                            We adopt UMI as our comparison baseline, which utilizes a hand-held gripper to collect robot
+                            gripper demonstrations,
+                            serving as the upper bound. As shown in Table, our framework achieves a similar success rate
+                            compared to UMI,
+                            demonstrating that the quality of our generated robot gripper demonstrations is comparable
+                            to those collected directly
+                            using a hand-held device.
+                        </p>
+
+                        <p
+                            style="color: #595959; font-size: 1.3em; line-height: 1.6; text-align: justify; margin-bottom: 1em;text-indent: 2em;">
+                            Moreover, we further compare our method with a baseline (the third row in Table), which uses
+                            an alternative approach for
+                            generating training ground truth. Specifically, we replace our approach of using a
+                            generative model to transfer human
+                            hand demonstrations to UMI gripper demonstrations with a simple rule-based texture mapping
+                            method. In this approach, we
+                            remove the hand parts from the human hand demon-stration, inpaint the background, and then
+                            apply the UMI gripper pattern
+                            to the image. As a result, the model trained using this data experiences a significant
+                            performance drop.
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="hero">
+        <div class="hero-body-subtitle-light" style="display: block">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-2 sansfont"
+                        style="font-family:'Acme';color:#595959; font-size: 48px !important;">
+                        Generalization Study
+                    </div>
+
                 </div>
             </div>
 
         </div>
     </section>
 
-    <div style="border: #999999 1px solid;"></div>
-    <section class="section">
-        <div class="container">
-            <div class="box"
-                style="background-color: #f5f5f5; border-radius: 6px; font-family: monospace; overflow-x: auto; position: relative;">
-                <!-- 添加复制按钮 -->
-                <button id="copy-button" class="button is-small"
-                    style="position: absolute; top: 10px; right: 10px; background-color: #4a4a4a; color: white; border: none; border-radius: 4px; cursor: pointer; z-index: 10;">
-                    <span class="icon is-small">
-                        <i class="fas fa-copy"></i>
-                    </span>
-                    <span>复制</span>
-                </button>
-
-                <pre id="bibtex-content"
-                    style="background-color: transparent; padding: 1em; white-space: pre-wrap; margin-top: 10px;">@inproceedings{heng2025rwor,
-        title={RwoR: Generating Robot Demonstrations from Human Hand for Robot Policy Learning without Robot},
-        author={Heng, Liang and Li, Xiaoqi and Mao, Shangqing and Liu, Ruolin and Wei, Jingli and Wang, Yu-Kai and Jia, Yueru and Gu, Chenyang and Liu, Jiaming and Xu, Chenfeng and Zhang, Shanghang and Dong, Hao},
-        year={2025}
-    }</pre>
+    <div style="border: #ffffff 20px solid;"></div>
+    <section class="hero">
+        <div class="hero-body-subtitle-light" style="display: block; padding-top: 1rem; padding-bottom: 1rem;">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-3 sansfont"
+                        style="font-family:'Acme'; color:#595959; font-size: 42px; margin-bottom: 5px;">
+                        Action
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 添加复制功能的JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const copyButton = document.getElementById('copy-button');
-            const bibtexContent = document.getElementById('bibtex-content');
+    <section class="hero" style="padding-top: 0em; margin-bottom: 1em;">
+        <div class="container">
+            <div class="columns">
+                <!-- 左侧视频 -->
+                <div class="column is-half">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div class="box handtext example-font"
+                            style="font-size: 1.25em; text-align: center; margin-bottom: 15px; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02); width: 50%;">
+                            Rotate Block
+                        </div>
+                        <video autoplay loop muted playsinline style="width: 90%; border-radius: 6pt;">
+                            <source src="videos/general/rotate_block.mp4" type="video/mp4">
+                            您的浏览器不支持视频标签。
+                        </video>
+                    </div>
+                </div>
 
-            copyButton.addEventListener('click', function () {
-                // 创建一个范围选择
-                const range = document.createRange();
-                range.selectNode(bibtexContent);
-                window.getSelection().removeAllRanges();
-                window.getSelection().addRange(range);
+                <!-- 右侧视频 -->
+                <div class="column is-half">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div class="box handtext example-font"
+                            style="font-size: 1.25em; text-align: center; margin-bottom: 15px; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02); width: 50%;">
+                            Unstack Block
+                        </div>
+                        <video autoplay loop muted playsinline style="width: 90%; border-radius: 6pt;">
+                            <source src="videos/general/unstack_block.mp4" type="video/mp4">
+                            您的浏览器不支持视频标签。
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                try {
-                    // 尝试复制选中的文本
-                    document.execCommand('copy');
+    <div style="border: #ffffff 20px solid;"></div>
+    <section class="hero">
+        <div class="hero-body-subtitle-light" style="display: block; padding-top: 1rem; padding-bottom: 1rem;">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-3 sansfont"
+                        style="font-family:'Acme'; color:#595959; font-size: 42px; margin-bottom: 5px;">
+                        Instance
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    // 提示用户复制成功
-                    copyButton.innerHTML = '<span class="icon is-small"><i class="fas fa-check"></i></span><span>已复制</span>';
-                    copyButton.style.backgroundColor = '#48c774';
+    <section class="hero" style="padding-top: 0em; margin-bottom: 1em;">
+        <div class="container">
+            <div class="columns">
+                <!-- 左侧视频 -->
+                <div class="column is-half">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div class="box handtext example-font"
+                            style="font-size: 1.25em; text-align: center; margin-bottom: 15px; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02); width: 50%;">
+                            Yellow Cup
+                        </div>
+                        <video autoplay loop muted playsinline style="width: 90%; border-radius: 6pt;">
+                            <source src="videos/general/yellow_cup.mp4" type="video/mp4">
+                            您的浏览器不支持视频标签。
+                        </video>
+                    </div>
+                </div>
 
-                    // 2秒后恢复按钮原样
-                    setTimeout(function () {
-                        copyButton.innerHTML = '<span class="icon is-small"><i class="fas fa-copy"></i></span><span>复制</span>';
-                        copyButton.style.backgroundColor = '#4a4a4a';
-                    }, 2000);
-                } catch (err) {
-                    console.error('复制失败:', err);
-                    copyButton.innerHTML = '<span class="icon is-small"><i class="fas fa-times"></i></span><span>复制失败</span>';
-                    copyButton.style.backgroundColor = '#f14668';
+                <!-- 右侧视频 -->
+                <div class="column is-half">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div class="box handtext example-font"
+                            style="font-size: 1.25em; text-align: center; margin-bottom: 15px; box-shadow: 0 0.5em 1em 0.125em rgba(10,10,10,.1), 0 0 0 2px rgba(10,10,10,.02); width: 50%;">
+                            White Block
+                        </div>
+                        <video autoplay loop muted playsinline style="width: 90%; border-radius: 6pt;">
+                            <source src="videos/general/white_block.mp4" type="video/mp4">
+                            您的浏览器不支持视频标签。
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    setTimeout(function () {
-                        copyButton.innerHTML = '<span class="icon is-small"><i class="fas fa-copy"></i></span><span>复制</span>';
-                        copyButton.style.backgroundColor = '#4a4a4a';
-                    }, 2000);
-                }
+    <section class="hero">
+        <div class="columns" style="background: #FFFFFF;">
+            <div class="column auto"></div>
+            <div class="column is-four-fifths"> <!-- 将is-half改为is-three-fifths，控制整体区域大小 -->
+                <div class="hero-body-long-video"
+                    style="display: flex; flex-direction: column; justify-content: space-around;">
+                    <div class="column-image"
+                        style="border-radius:10px; justify-content: center; align-items: center; overflow: hidden;">
+                        <div style="position: relative;">
+                            <img id="pipelineImg" src="static/assets/chart2.png" alt="RwoR Pipeline Overview"
+                                style="width: 90%; border-radius: 10px; transform-origin: center center; display: block; margin: 0 auto;">
+                            <div
+                                style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(255,255,255,0.7); border-radius: 5px; padding: 5px;">
+                                <button onclick="zoomImage(1.1)" class="button is-small">
+                                    <span class="icon is-small"><i class="fas fa-search-plus"></i></span>
+                                </button>
+                                <button onclick="zoomImage(0.9)" class="button is-small">
+                                    <span class="icon is-small"><i class="fas fa-search-minus"></i></span>
+                                </button>
+                                <button onclick="resetZoom()" class="button is-small">
+                                    <span class="icon is-small"><i class="fas fa-redo"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column auto"></div>
+        </div>
+    </section>
 
-                // 清除选择
-                window.getSelection().removeAllRanges();
-            });
-        });
-    </script>
+
+    <section class="hero" style="padding-top: 1em; padding-bottom: 2em;">
+        <div class="container">
+            <div class="box"
+                style="background-color: #f9f9f9; border-radius: 6px; max-width: 90%; margin: 0 auto; box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.05);">
+                <div class="content">
+                    <p
+                        style="color: #595959; font-size: 1.3em; line-height: 1.6; text-align: justify; margin-bottom: 1em;text-indent: 2em;">
+                        We use the generated robot demonstrations to train the policy model and test its success rate,
+                        which can reflect
+                        the
+                        quality of generated robot gripper demonstrations on unseen action types and instances.
+                    </p>
+
+                    <p
+                        style="color: #595959; font-size: 1.3em; line-height: 1.6; text-align: justify; margin-bottom: 1em;text-indent: 2em;">
+                        For action type generalization, the generative model's training dataset includes actions "slide
+                        block", however,
+                        we use
+                        the trained diffusion-based generative model to generate robot demonstrations for other actions,
+                        such as "rotate
+                        block"
+                        and "unstack block." Even for unseen action tasks, the success rate of the trained policy model
+                        remains high.
+                    </p>
+
+                    <p
+                        style="color: #595959; font-size: 1.3em; line-height: 1.6; text-align: justify;text-indent: 2em;">
+                        For instance generalization, we test the trained generative model on unseen instance appearance,
+                        which is not
+                        included
+                        in the entire generative model training dataset. the success rate remains consistent at 0.87 for
+                        both the seen
+                        instance
+                        pouring the "white cup" and the unseen instance pouring the "yellow cup". Additionally, the
+                        unseen instance
+                        sliding the
+                        "white block" experiences only a minor performance drop of 0.04 compared to the seen instance
+                        sliding the "red
+                        block".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <div style="border: #ffffff 20px solid;"></div>
