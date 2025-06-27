@@ -1,0 +1,5 @@
+@inproceedings{heng2025rwor,
+  title={RwoR: Generating Robot Demonstrations from Human Hand for Robot Policy Learning without Robot},
+  author={Heng, Liang and Li, Xiaoqi and Mao, Shangqing and Liu, Ruolin and Wei, Jingli and Wang, Yu-Kai and Jia, Yueru and Gu, Chenyang and Liu, Jiaming and Xu, Chenfeng and Zhang, Shanghang and Dong, Hao},
+  year={2025}
+}
